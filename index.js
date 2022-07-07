@@ -13,7 +13,7 @@ const creds = {
 const fileOptions = {
     folder: process.env.TARGETFOLDER || 'Shared documents/results', 
     fileName: `${process.env.FILENAME}` || 'generic.txt',
-    fileContent: readFileSync(process.env.FILEPATH)
+    fileContent: readFileSync(process.env.FILENAME)
 };
 
 async function main () {
