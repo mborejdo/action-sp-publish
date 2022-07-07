@@ -31,9 +31,9 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   env:
-    SITE_URL : ${{ inputs.site_url }}
-    USER : ${{ inputs.sharepoint_user }}
-    PASSWD: ${{ inputs.sharepoint_password }}
-    LIB_FOLDER : ${{ inputs.library_folder }}
+    SITEURL : ${{ inputs.site_url }}
+    SPUSER : ${{ inputs.sharepoint_user }}
+    SPPASSWORD: ${{ inputs.sharepoint_password }}
+    TARGETFOLDER : ${{ inputs.library_folder }}
     FILENAME : ${{ inputs.filename }}
     FILEPATH : ${{ inputs.filepath }}

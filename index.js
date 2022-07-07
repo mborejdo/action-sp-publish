@@ -2,23 +2,16 @@ import { spsave } from 'spsave';
 import { readFileSync } from 'fs';
 
 const coreOptions = {
-    siteUrl: process.env.SITE_URL || '',
+    siteUrl: process.env.SITEURL || '',
 };
 
 const creds = {
-    username: process.env.USER || '',
-    password: process.env.PASSWD || ''
+    username: process.env.SPUSER || '',
+    password: process.env.SPPASSWORD || ''
 };
 
-const now = new Date().toISOString().slice(0,10);
-
-const ref = "";
-if (process.env.GITHUB_REF) {
-  ref = process.env.GITHUB_REF.substr(process.env.GITHUB_REF.lastIndexOf('/') + 1);
-}
-
 const fileOptions = {
-    folder: process.env.LIB_FOLDER || 'Shared documents/results', 
+    folder: process.env.TARGETFOLDER || 'Shared documents/results', 
     fileName: `${process.env.FILENAME}` || 'generic.txt',
     fileContent: readFileSync(process.env.FILEPATH)
 };
