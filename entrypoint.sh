@@ -1,9 +1,5 @@
 #!/bin/sh -l
 
-echo "Creating archive";
-
-env
-
 mkdir /out
 cd $GITHUB_WORKSPACE
 
