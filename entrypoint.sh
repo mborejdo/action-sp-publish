@@ -3,7 +3,7 @@
 mkdir /out
 cd $GITHUB_WORKSPACE
 
-zip -r "/app/$FILE_NAME" "$FILE_PATH"
+zip -r "/app/$FILENAME" "$FILEPATH"
 
 node /app/index.js
 
