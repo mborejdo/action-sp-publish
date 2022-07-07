@@ -1,4 +1,4 @@
-FROM node:current-slim
+FROM node:current-alpine3.15
 
 RUN apk add zip --update
 COPY ./* /app/
