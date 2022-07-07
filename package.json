@@ -1,0 +1,16 @@
+{
+  "name": "@mborejdo/action-sp-publish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "exit 1"
+  },
+  "repository": "https://github.com/mborejdo/action-sp-publish",
+  "author": "@mib",
+  "license": "MIT",
+  "devDependencies": {
+    "spsave": "^4.0.2"
+  }
+}
