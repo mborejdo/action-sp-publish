@@ -5,5 +5,5 @@ COPY ./* /app/
 RUN cd /app && chmod +x entrypoint.sh
 
 WORKDIR /app
-RUN npm install
+RUN npm install && npx playwright install
 ENTRYPOINT ["/app/entrypoint.sh"]
