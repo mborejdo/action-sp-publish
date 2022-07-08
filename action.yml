@@ -1,6 +1,6 @@
 # action.yml
 name: 'Publish to Sharepoint'
-description: 'Create a archive of the repository and upload it to a Sharepoint library'
+description: ''
 author: 'mborejdo'
 branding:
   icon: 'upload-cloud'  
@@ -10,10 +10,10 @@ inputs:
     description: 'The Sharepoint site url'
     required: true
   sharepoint_user: 
-    description: 'User name to use for authentication'
+    description: 'Username'
     required: true
   sharepoint_password: 
-    description: 'Password to use for authentication'
+    description: 'Password'
     required: true
   library_folder: 
     description: 'The path where to upload the archive in the library'

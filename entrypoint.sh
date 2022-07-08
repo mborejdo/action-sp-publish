@@ -3,8 +3,9 @@
 mkdir /out
 cd $GITHUB_WORKSPACE
 
-zip -r "/out/${FILENAME}" "${FILEPATH}" -x .git/*
-export FILEPATH="/out/${FILENAME}"
+timestamp=$(date +%s)
+zip -r "/out/${timestamp}_${FILENAME}" "${FILEPATH}" -x .git/*
+export FILEPATH="/out/${timestamp}_${FILENAME}"
 
 node /app/index.js
 
