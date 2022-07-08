@@ -21,7 +21,7 @@ async function main () {
         await spsave(coreOptions, creds, fileOptions);
         console.log('Success');
     } catch (error) {
-        console.log(err);
+        console.log(error);
         process.exit(1);
     }
 };
